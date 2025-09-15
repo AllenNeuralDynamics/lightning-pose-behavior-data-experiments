@@ -1,5 +1,180 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -ex
-
+## !/usr/bin/env bash
 # This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
-python -u run_capsule.py "$@"
+# python -u litpose_training_demo.py "$@"
+
+# The previous version of this file was commented-out and follows below:
+#
+# # pip uninstall -y fastapi starlette pydantic
+# # pip install fastapi starlette pydantic
+# 
+# cd /lightning-pose/
+# pytest
+# 
+
+
+# # copy DLC annotated data
+# cp -r ../data/Han_DLC_annotated_data/Han_data_multiple_video/Foraging_Bot-Han_Lucas-2022-04-27/labeled-data/bottom_face_1-0000/ ../scratch/lightning-pose/Han_datasets
+
+config_dir="/root/capsule/scratch/lightning-pose/scripts/configs/"
+script_dir="../scratch/lightning-pose/"
+cd ${script_dir}
+
+DLC_data_dir=/data/s3_video/DLC_projects/
+ls -lt $DLC_data_dir 
+
+# for project in "Foraging_Bot-Han_Lucas-2022-04-27"; do
+#     echo "------------"
+#     echo $project
+#     data_dir="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/"
+#     ls ${DLC_data_dir}/${project}/labeled-data/bottom_face_*-0000/
+#     cp -r ${DLC_data_dir}/${project}/labeled-data/bottom_face_*-0000/ ${data_dir}/labeled-data
+#     # echo "The number of videos in this project:"
+#     # ls -lt $data_dir/$project/videos/*.avi | wc -l
+#     # echo "The number of labeled videos in this project:"
+#     # ls -lt $data_dir/$project/labeled-data/*/CollectedData*.csv | wc -l
+# done
+
+# for project in "Foraging_Bot-Han_Lucas-2022-04-27"; do
+#     echo "------------"
+#     echo $project
+#     data_dir="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/"
+#     cp ${DLC_data_dir}/${project}/training-datasets/iteration-0/UnaugmentedDataSet_Foraging_BotApr27/CollectedData_Han_Lucas.csv ${data_dir}
+# done
+
+##################################
+# TRAINING_DLC_FILE="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/CollectedData_Han_Lucas.csv"
+# TRAINING_LP_FILE="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/CollectedData_.csv"
+
+# # TRAINING_DLC_FILE="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/CollectedData_Han_Lucas_oneVideo.csv"
+# # TRAINING_LP_FILE="/root/capsule/scratch/lightning-pose/toy_datasets/toyHanData/CollectedData_oneVideo.csv"
+
+# # convert DLC data to LP format
+# if [ ! -f ${TRAINING_LP_FILE} ]; then
+#     python scripts/convertDLC.py \
+#     --TRAINING_DLC_FILE "${TRAINING_DLC_FILE}" \
+#     --TRAINING_LP_FILE "${TRAINING_LP_FILE}" 
+# fi
+##################################
+
+
+#-----------------------------------#
+
+config_name="config_toy-dataset"
+
+# python scripts/train_hydra.py training.max_epochs=11 hydra.run.dir=outputs/toy_dataset/${config_name}/ --config-path="${config_dir}" --config-name="${config_name}.yaml"
+# working_dir="/root/capsule/scratch/lightning-pose/outputs/"
+# python scripts/plot_video_prediction.py \
+# 	--working_dir ${working_dir} \
+
+#-----------------------------------#
+config_name="config_toy-Handataset"
+max_epochs=100
+output_dir=outputs_Han_dataset
+
+# train model
+# python scripts/train_hydra.py training.max_epochs=${max_epochs} hydra.run.dir=${output_dir}/${config_name}/trial1 --config-path="${config_dir}" --config-name="${config_name}.yaml"
+working_dir="/root/capsule/scratch/lightning-pose/${output_dir}/"
+
+# # plot trajectories
+# python scripts/plot_video_prediction.py \
+# 	--working_dir ${working_dir} \
+#     --video_to_plot "bottom_face_1-0000" \
+    
+#-----------------------------------#
+config_name="config_toy-Handataset"
+# max_epochs=300 # default
+max_epochs=10
+
+#------------------ Han data --------------------#
+scorer_name="Han_behavior_data"
+project_name="Foraging_Bot-Han_Lucas-2022-04-27"
+# video_name="bottom_face_1-0000_excluded"
+video_name="CollectedData_all"
+config_dir="/root/capsule/scratch/DLC_dataset_for_LP/${scorer_name}/${project_name}/"
+
+# #--------------- Corbett data --------------------#
+
+# scorer_name="Corbett_behavior_data"
+# project_name="1051155866_524760_20200917.behavior-Shailaja-2023-06-19"
+# video_name="CollectedData_all"
+# config_dir="/root/capsule/scratch/DLC_dataset_for_LP/${scorer_name}/${project_name}/"
+
+# #------------------ Marton data -----------------#
+# scorer_name="Marton_behavior_data"
+# project_name="BCI_bottom_2022_10_06"
+# # video_name="trial_00012__2022-04-20_15-36-30_excluded"
+# video_name="CollectedData_all"
+# config_dir="/root/capsule/scratch/DLC_dataset_for_LP/${scorer_name}/${project_name}/"
+# #-----------------------------------#
+
+
+output_dir="/root/capsule/scratch/LP_outputs/"
+if [ ! -d ${output_dir} ]; then
+    mkdir ${output_dir}
+fi
+
+output_dir="${output_dir}/${scorer_name}"
+if [ ! -d ${output_dir} ]; then
+    mkdir ${output_dir}
+fi
+
+output_dir="${output_dir}/${project_name}"
+if [ ! -d ${output_dir} ]; then
+    mkdir ${output_dir}
+fi
+
+output_dir="${output_dir}/${video_name}"
+if [ ! -d ${output_dir} ]; then
+    mkdir ${output_dir}
+fi
+
+
+# train model
+# /root/capsule/scratch/DLC_dataset_for_LP/Corbett_behavior_data/1051155866_524760_20200917.behavior-Shailaja-2023-06-19/CollectedData_all.config.yaml
+# test_videos_dir="/root/capsule/data/${scorer_name}/${project_name}/videos/"
+# echo "${config_dir}${video_name}.config.yaml"
+
+# TODO
+# array=("0" "1")
+# datacolumns_for_singleview_pca="${array[@]}"
+# losses.pca_singleview.components_to_keep=0.7
+# eval.test_videos_directory=${test_videos_dir}
+# training.max_epochs=${max_epochs}
+
+
+test_videos_dir="/root/capsule/scratch/LP_outputs/Han_behavior_data/Foraging_Bot-Han_Lucas-2022-04-27/CollectedData_all/videos/"
+python scripts/train_hydra.py data.video_dir=${test_videos_dir} eval.test_videos_directory=${test_videos_dir} hydra.run.dir=${output_dir} --config-path="${config_dir}" --config-name="${video_name}.config.yaml"
+
+# working_dir="/root/capsule/scratch/lightning-pose/${output_dir}/"
+# # plot trajectories
+# python scripts/plot_video_prediction.py \
+# 	--working_dir ${working_dir} \
+#     --video_to_plot "bottom_face_1-0000" \
+    
+#------------------- analysis + comparison ----------------#
+
+pred_DLC="../data/DLC_trial1_Foraging_Bot-Han_Lucas-2022-04-27/scratch/Han_data_multiple_video/Foraging_Bot-Han_Lucas-2022-04-27/videos/bottom_face_1-0000DLC_resnet50_Foraging_BotApr27shuffle1_200000.csv"
+pred_SLEAP="/root/capsule/data/SLEAP_trial1_Foraging_Bot-Han_Lucas-2022-04-27/scratch/Han_data_multiple_video/Foraging_Bot-Han_Lucas-2022-04-27/shuffle1/video_shuffle1.predictions.analysis.h5"
+pred_SLEAP="/root/capsule/data/SLEAP_trial1_Foraging_Bot-Han_Lucas-2022-04-27/scratch/Han_data_multiple_video/Foraging_Bot-Han_Lucas-2022-04-27/shuffle1/video_shuffle1.predictions.pkg.slp"
+pred_LP="/root/capsule/data/LP_trial1_Foraging_Bot-Han_Lucas-2022-04-27/config_toy-Handataset/trial1/video_preds/bottom_face_1-0000.csv"
+
+
+# convert slp prediction to csv
+# export_labeled_video
+# compute pixel error
+# compute temporal norm loss
+# plot_trajectory
+script_dir="/root/capsule/code/"
+# cd ${script_dir}
+# python analysis.py
+
+#-----------------------------------#
+
+## does not work
+# python scripts/predict_new_vids.py eval.hydra_paths=["2023-06-15/19-39-58/"] 
+# streamlit run /root/capsule/scratch/lightning-pose/lightning_pose/apps/labeled_frame_diagnostics.py -- --model_dir ${working_dir}/outputs
+# streamlit run /root/capsule/scratch/lightning-pose/lightning_pose/apps/video_diagnostics.py -- --model_dir ${working_dir}/outputs
+
+cp -r "/root/capsule/scratch/LP_outputs/" "/root/capsule/results/"

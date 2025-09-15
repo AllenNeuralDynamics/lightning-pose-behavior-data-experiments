@@ -1,0 +1,42 @@
+data_dir: /root/capsule/data/Corbett_behavior_data/
+projects:
+  1051155866_524760_20200917.behavior-Shailaja-2023-06-19:
+    TRAINING_DLC_FILE: ''
+    config_file: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.behavior-Shailaja-2023-06-19/config.yaml
+    data_dir: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.behavior-Shailaja-2023-06-19
+    num_videos: 1
+    video_dir: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.behavior-Shailaja-2023-06-19/videos
+    video_sets:
+      1051155866_524760_20200917.behavior:
+        height: 492
+        width: 658
+  1051155866_524760_20200917.face-Shailaja-2023-06-15:
+    TRAINING_DLC_FILE: ''
+    config_file: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.face-Shailaja-2023-06-15/config.yaml
+    data_dir: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.face-Shailaja-2023-06-15
+    num_videos: 1
+    video_dir: /root/capsule/data/Corbett_behavior_data/1051155866_524760_20200917.face-Shailaja-2023-06-15/videos
+    video_sets:
+      1051155866_524760_20200917.face:
+        height: 492
+        width: 658
+  1056495334_531237_20201014.behavior-Ethan-2023-06-20:
+    TRAINING_DLC_FILE: ''
+    config_file: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.behavior-Ethan-2023-06-20/config.yaml
+    data_dir: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.behavior-Ethan-2023-06-20
+    num_videos: 1
+    video_dir: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.behavior-Ethan-2023-06-20/videos
+    video_sets:
+      1056495334_531237_20201014.behavior:
+        height: 492
+        width: 658
+  1056495334_531237_20201014.face-Ethan-2023-06-20:
+    TRAINING_DLC_FILE: ''
+    config_file: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.face-Ethan-2023-06-20/config.yaml
+    data_dir: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.face-Ethan-2023-06-20
+    num_videos: 1
+    video_dir: /root/capsule/data/Corbett_behavior_data/1056495334_531237_20201014.face-Ethan-2023-06-20/videos
+    video_sets:
+      1056495334_531237_20201014.face:
+        height: 492
+        width: 658

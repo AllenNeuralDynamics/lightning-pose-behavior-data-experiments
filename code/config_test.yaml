@@ -1,0 +1,133 @@
+    # Project definitions (do not edit)
+Task: BCI_Bottom_221006
+scorer: Kayvon_Marton_Mohit_Lucas
+date: Oct06
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /home/labadmin/Data/DLC_training/BCI_bottom_2022_10_06
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00001__2022-04-20_15-34-56.mp4:
+    crop: 0, 22, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00003__2022-04-22_12-09-51.mp4:
+    crop: 0, 200, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00007__2022-04-22_12-10-39.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00012__2022-04-20_15-36-30.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00013__2022-04-21_13-10-15.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00018__2022-04-20_15-37-13.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00028__2022-04-15_14-44-06.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00029__2022-04-10_10-55-08.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00030__2022-04-22_12-15-15.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00031__2022-04-15_14-44-37.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00034__2022-04-10_10-56-05.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00037__2022-04-10_10-56-46.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00040__2022-04-10_10-57-18.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00044__2022-04-22_12-17-58.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00046__2022-04-22_12-18-25.mp4:
+    crop: 0, 1000, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00050__2022-04-10_10-59-06.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00054__2022-04-10_10-59-59.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00057__2022-04-21_13-18-18.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00064__2022-04-20_15-43-58.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00067__2022-04-20_15-44-29.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00070__2022-04-10_11-02-50.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00077__2022-04-15_14-53-23.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00088__2022-04-21_13-23-34.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00089__2022-04-20_15-47-34.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00091__2022-04-20_15-47-48.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00096__2022-04-20_15-48-27.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00097__2022-04-15_14-57-10.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00100__2022-04-22_12-29-55.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00109__2022-04-15_14-59-37.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00110__2022-04-21_13-27-45.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00111__2022-04-22_12-32-24.mp4:
+    crop: 0, 900, 0, 500
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00120__2022-04-22_12-34-49.mp4:
+    crop: 0, 999, 0, 5090
+  C:\Deeplabcut_Projects\BCI_Bottom-Kayvon_Marton_Mohit_Lucas-2022-04-30\videos\trial_00125__2022-04-22_12-36-00.mp4:
+    crop: 0, 800, 0, 400
+bodyparts:
+- WLUp
+- WLMid
+- WLBot
+- WRUp
+- WRMid
+- WRBot
+- Jaw
+- NoseTip
+- LickPort
+- Pole
+- TongueTip
+- TongueMid
+- PawL
+- PawR
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 2
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

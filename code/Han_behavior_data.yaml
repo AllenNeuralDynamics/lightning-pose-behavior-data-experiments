@@ -1,0 +1,316 @@
+data_dir: /root/capsule/data/s3_video/DLC_projects/
+projects:
+  Foraging_Bot-Han_Lucas-2022-04-27:
+    TRAINING_DLC_FILE:
+    - /root/capsule/data/s3_video/DLC_projects/Foraging_Bot-Han_Lucas-2022-04-27/training-datasets/iteration-0/UnaugmentedDataSet_Foraging_BotApr27/CollectedData_Han_Lucas.csv
+    config_file: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot-Han_Lucas-2022-04-27/config.yaml
+    data_dir: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot-Han_Lucas-2022-04-27
+    num_videos: 29
+    video_dir: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot-Han_Lucas-2022-04-27/videos
+    video_sets:
+      bottom_face_1-0000:
+        height: 272
+        width: 272
+      bottom_face_101-0000:
+        height: 312
+        width: 352
+      bottom_face_110-0000:
+        height: 272
+        width: 272
+      bottom_face_114-0000:
+        height: 272
+        width: 272
+      bottom_face_115-0000:
+        height: 272
+        width: 304
+      bottom_face_116-0000:
+        height: 272
+        width: 272
+      bottom_face_137-0000:
+        height: 312
+        width: 352
+      bottom_face_164-0000:
+        height: 312
+        width: 352
+      bottom_face_171-0000:
+        height: 312
+        width: 352
+      bottom_face_186-0000:
+        height: 312
+        width: 352
+      bottom_face_197-0000:
+        height: 272
+        width: 272
+      bottom_face_20-0000:
+        height: 272
+        width: 272
+      bottom_face_205-0000:
+        height: 312
+        width: 352
+      bottom_face_37-0000:
+        height: 312
+        width: 352
+      bottom_face_41-0000:
+        height: 272
+        width: 304
+      bottom_face_484-0000:
+        height: 272
+        width: 272
+      bottom_face_49-0000:
+        height: 272
+        width: 272
+      bottom_face_5-0000:
+        height: 272
+        width: 272
+      bottom_face_521-0000:
+        height: 272
+        width: 272
+      bottom_face_533-0000:
+        height: 272
+        width: 272
+      bottom_face_593-0000:
+        height: 272
+        width: 304
+      bottom_face_6-0000:
+        height: 272
+        width: 304
+      bottom_face_65-0000:
+        height: 312
+        width: 352
+      bottom_face_670-0000:
+        height: 272
+        width: 272
+      bottom_face_718-0000:
+        height: 272
+        width: 272
+      bottom_face_857-0000:
+        height: 272
+        width: 304
+      bottom_face_861-0000:
+        height: 272
+        width: 272
+      bottom_face_866-0000:
+        height: 272
+        width: 304
+      bottom_face_888-0000:
+        height: 272
+        width: 304
+  Foraging_Bot_UpdatingOld_20220927-LucasKinsey-2022-09-27:
+    TRAINING_DLC_FILE: []
+    config_file: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot_UpdatingOld_20220927-LucasKinsey-2022-09-27/config.yaml
+    data_dir: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot_UpdatingOld_20220927-LucasKinsey-2022-09-27
+    num_videos: 39
+    video_dir: /root/capsule/data/s3_video/DLC_projects/Foraging_Bot_UpdatingOld_20220927-LucasKinsey-2022-09-27/videos
+    video_sets:
+      bottom_face_1-0000:
+        height: 272
+        width: 272
+      bottom_face_101-0000:
+        height: 312
+        width: 352
+      bottom_face_110-0000:
+        height: 272
+        width: 272
+      bottom_face_114-0000:
+        height: 272
+        width: 272
+      bottom_face_115-0000:
+        height: 272
+        width: 304
+      bottom_face_116-0000:
+        height: 272
+        width: 272
+      bottom_face_121-0000:
+        height: 254
+        width: 240
+      bottom_face_137-0000:
+        height: 312
+        width: 352
+      bottom_face_164-0000:
+        height: 312
+        width: 352
+      bottom_face_168-0000:
+        height: 268
+        width: 272
+      bottom_face_171-0000:
+        height: 312
+        width: 352
+      bottom_face_186-0000:
+        height: 312
+        width: 352
+      bottom_face_197-0000:
+        height: 272
+        width: 272
+      bottom_face_20-0000:
+        height: 272
+        width: 272
+      bottom_face_205-0000:
+        height: 312
+        width: 352
+      bottom_face_226-0000:
+        height: 268
+        width: 272
+      bottom_face_278-0000:
+        height: 268
+        width: 272
+      bottom_face_336-0000:
+        height: 268
+        width: 272
+      bottom_face_34-0000:
+        height: 254
+        width: 240
+      bottom_face_37-0000:
+        height: 312
+        width: 352
+      bottom_face_41-0000:
+        height: 272
+        width: 304
+      bottom_face_484-0000:
+        height: 272
+        width: 272
+      bottom_face_49-0000:
+        height: 272
+        width: 272
+      bottom_face_5-0000:
+        height: 272
+        width: 272
+      bottom_face_521-0000:
+        height: 272
+        width: 272
+      bottom_face_533-0000:
+        height: 272
+        width: 272
+      bottom_face_534-0000:
+        height: 254
+        width: 240
+      bottom_face_568-0000:
+        height: 254
+        width: 240
+      bottom_face_593-0000:
+        height: 272
+        width: 304
+      bottom_face_6-0000:
+        height: 272
+        width: 304
+      bottom_face_633-0000:
+        height: 254
+        width: 240
+      bottom_face_65-0000:
+        height: 312
+        width: 352
+      bottom_face_670-0000:
+        height: 272
+        width: 272
+      bottom_face_70-0000:
+        height: 268
+        width: 272
+      bottom_face_718-0000:
+        height: 272
+        width: 272
+      bottom_face_857-0000:
+        height: 272
+        width: 304
+      bottom_face_861-0000:
+        height: 272
+        width: 272
+      bottom_face_866-0000:
+        height: 272
+        width: 304
+      bottom_face_888-0000:
+        height: 272
+        width: 304
+  SideView-Han_Lucas-2022-07-06:
+    TRAINING_DLC_FILE:
+    - /root/capsule/data/s3_video/DLC_projects/SideView-Han_Lucas-2022-07-06/training-datasets/iteration-0/UnaugmentedDataSet_SideViewJul6/CollectedData_Han_Lucas.csv
+    config_file: /root/capsule/data/s3_video/DLC_projects/SideView-Han_Lucas-2022-07-06/config.yaml
+    data_dir: /root/capsule/data/s3_video/DLC_projects/SideView-Han_Lucas-2022-07-06
+    num_videos: 29
+    video_dir: /root/capsule/data/s3_video/DLC_projects/SideView-Han_Lucas-2022-07-06/videos
+    video_sets:
+      side_face_1-0000:
+        height: 280
+        width: 272
+      side_face_101-0000:
+        height: 304
+        width: 288
+      side_face_110-0000:
+        height: 280
+        width: 272
+      side_face_114-0000:
+        height: 280
+        width: 272
+      side_face_115-0000:
+        height: 258
+        width: 304
+      side_face_116-0000:
+        height: 280
+        width: 272
+      side_face_137-0000:
+        height: 304
+        width: 288
+      side_face_164-0000:
+        height: 304
+        width: 336
+      side_face_171-0000:
+        height: 304
+        width: 288
+      side_face_186-0000:
+        height: 304
+        width: 336
+      side_face_197-0000:
+        height: 280
+        width: 272
+      side_face_20-0000:
+        height: 280
+        width: 272
+      side_face_205-0000:
+        height: 304
+        width: 288
+      side_face_37-0000:
+        height: 304
+        width: 288
+      side_face_41-0000:
+        height: 258
+        width: 304
+      side_face_484-0000:
+        height: 280
+        width: 272
+      side_face_49-0000:
+        height: 280
+        width: 272
+      side_face_5-0000:
+        height: 280
+        width: 272
+      side_face_521-0000:
+        height: 280
+        width: 272
+      side_face_533-0000:
+        height: 280
+        width: 272
+      side_face_593-0000:
+        height: 258
+        width: 304
+      side_face_6-0000:
+        height: 258
+        width: 304
+      side_face_65-0000:
+        height: 304
+        width: 288
+      side_face_670-0000:
+        height: 280
+        width: 272
+      side_face_718-0000:
+        height: 280
+        width: 272
+      side_face_857-0000:
+        height: 258
+        width: 304
+      side_face_861-0000:
+        height: 280
+        width: 272
+      side_face_866-0000:
+        height: 258
+        width: 304
+      side_face_888-0000:
+        height: 258
+        width: 304

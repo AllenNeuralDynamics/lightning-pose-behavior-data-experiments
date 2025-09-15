@@ -1,0 +1,245 @@
+data_dir: /root/capsule/data/Marton_behavior_data/
+projects:
+  BCI_bottom_2022_10_06:
+    config_file: /root/capsule/data/Marton_behavior_data/BCI_bottom_2022_10_06/config.yaml
+    num_videos: 30
+    video_sets:
+      trial_00001__2022-04-20_15-34-56:
+        height: 500
+        width: 900
+      trial_00003__2022-04-22_12-09-51:
+        height: 500
+        width: 900
+      trial_00007__2022-04-22_12-10-39:
+        height: 500
+        width: 900
+      trial_00012__2022-04-20_15-36-30:
+        height: 500
+        width: 900
+      trial_00013__2022-04-21_13-10-15:
+        height: 500
+        width: 900
+      trial_00018__2022-04-20_15-37-13:
+        height: 500
+        width: 900
+      trial_00028__2022-04-15_14-44-06:
+        height: 500
+        width: 900
+      trial_00029__2022-04-10_10-55-08:
+        height: 500
+        width: 900
+      trial_00030__2022-04-22_12-15-15:
+        height: 500
+        width: 900
+      trial_00031__2022-04-15_14-44-37:
+        height: 500
+        width: 900
+      trial_00034__2022-04-10_10-56-05:
+        height: 500
+        width: 900
+      trial_00037__2022-04-10_10-56-46:
+        height: 500
+        width: 900
+      trial_00040__2022-04-10_10-57-18:
+        height: 500
+        width: 900
+      trial_00044__2022-04-22_12-17-58:
+        height: 500
+        width: 900
+      trial_00046__2022-04-22_12-18-25:
+        height: 500
+        width: 900
+      trial_00050__2022-04-10_10-59-06:
+        height: 500
+        width: 900
+      trial_00054__2022-04-10_10-59-59:
+        height: 500
+        width: 900
+      trial_00057__2022-04-21_13-18-18:
+        height: 500
+        width: 900
+      trial_00064__2022-04-20_15-43-58:
+        height: 500
+        width: 900
+      trial_00067__2022-04-20_15-44-29:
+        height: 500
+        width: 900
+      trial_00070__2022-04-10_11-02-50:
+        height: 500
+        width: 900
+      trial_00077__2022-04-15_14-53-23:
+        height: 500
+        width: 900
+      trial_00088__2022-04-21_13-23-34:
+        height: 500
+        width: 900
+      trial_00089__2022-04-20_15-47-34:
+        height: 500
+        width: 900
+      trial_00096__2022-04-20_15-48-27:
+        height: 500
+        width: 900
+      trial_00097__2022-04-15_14-57-10:
+        height: 500
+        width: 900
+      trial_00100__2022-04-22_12-29-55:
+        height: 500
+        width: 900
+      trial_00111__2022-04-22_12-32-24:
+        height: 500
+        width: 900
+      trial_00120__2022-04-22_12-34-49:
+        height: 500
+        width: 900
+      trial_00125__2022-04-22_12-36-00:
+        height: 500
+        width: 900
+  BCI_side_2022_08_12:
+    config_file: /root/capsule/data/Marton_behavior_data/BCI_side_2022_08_12/config.yaml
+    num_videos: 48
+    video_sets:
+      trial_00000__2022-05-12_15-19-56:
+        height: ''
+        width: ''
+      trial_00001__2022-04-20_15-34-56:
+        height: 500
+        width: 900
+      trial_00003__2022-04-22_12-09-51:
+        height: 500
+        width: 900
+      trial_00005__2022-07-05_16-58-55:
+        height: 500
+        width: 900
+      trial_00007__2022-04-22_12-10-39:
+        height: 500
+        width: 900
+      trial_00012__2022-04-20_15-36-30:
+        height: 500
+        width: 900
+      trial_00013__2022-04-21_13-10-15:
+        height: 500
+        width: 900
+      trial_00018__2022-04-20_15-37-13:
+        height: 500
+        width: 900
+      trial_00019__2022-05-12_15-23-47:
+        height: ''
+        width: ''
+      trial_00021__2022-06-30_10-22-39:
+        height: 500
+        width: 900
+      trial_00025__2022-06-28_11-57-02:
+        height: 500
+        width: 900
+      trial_00028__2022-04-15_14-44-06:
+        height: 500
+        width: 900
+      trial_00029__2022-04-10_10-55-08:
+        height: 500
+        width: 900
+      trial_00030__2022-04-22_12-15-15:
+        height: 500
+        width: 900
+      trial_00031__2022-04-15_14-44-37:
+        height: 500
+        width: 900
+      trial_00034__2022-04-10_10-56-05:
+        height: 500
+        width: 900
+      trial_00036__2022-06-28_12-12-43:
+        height: 500
+        width: 900
+      trial_00037__2022-04-10_10-56-46:
+        height: 500
+        width: 900
+      trial_00040__2022-04-10_10-57-18:
+        height: 500
+        width: 900
+      trial_00040b__2022-05-12_15-27-50:
+        height: ''
+        width: ''
+      trial_00042__2022-06-29_13-12-39:
+        height: 500
+        width: 900
+      trial_00044__2022-04-22_12-17-58:
+        height: 500
+        width: 900
+      trial_00046__2022-04-22_12-18-25:
+        height: 500
+        width: 900
+      trial_00050__2022-04-10_10-59-06:
+        height: 500
+        width: 900
+      trial_00051__2022-05-12_15-30-07:
+        height: ''
+        width: ''
+      trial_00054__2022-04-10_10-59-59:
+        height: 500
+        width: 900
+      trial_00057__2022-04-21_13-18-18:
+        height: 500
+        width: 900
+      trial_00059__2022-06-30_10-31-04:
+        height: 500
+        width: 900
+      trial_00064__2022-04-20_15-43-58:
+        height: 500
+        width: 900
+      trial_00067__2022-04-20_15-44-29:
+        height: 500
+        width: 900
+      trial_00069__2022-07-01_09-50-02:
+        height: 500
+        width: 900
+      trial_00070__2022-04-10_11-02-50:
+        height: 500
+        width: 900
+      trial_00077__2022-04-15_14-53-23:
+        height: 500
+        width: 900
+      trial_00081__2022-05-12_15-35-39:
+        height: ''
+        width: ''
+      trial_00082__2022-06-29_16-50-38:
+        height: 500
+        width: 900
+      trial_00088__2022-04-21_13-23-34:
+        height: 500
+        width: 900
+      trial_00089__2022-04-20_15-47-34:
+        height: 500
+        width: 900
+      trial_00091__2022-04-20_15-47-48:
+        height: 500
+        width: 900
+      trial_00096__2022-04-20_15-48-27:
+        height: 500
+        width: 900
+      trial_00097__2022-04-15_14-57-10:
+        height: 500
+        width: 900
+      trial_00100__2022-04-22_12-29-55:
+        height: 500
+        width: 900
+      trial_00103__2022-07-04_13-15-39:
+        height: 500
+        width: 900
+      trial_00109__2022-04-15_14-59-37:
+        height: 500
+        width: 900
+      trial_00110__2022-04-21_13-27-45:
+        height: 500
+        width: 900
+      trial_00110__2022-07-04_13-16-59:
+        height: 500
+        width: 900
+      trial_00111__2022-04-22_12-32-24:
+        height: 500
+        width: 900
+      trial_00120__2022-04-22_12-34-49:
+        height: 500
+        width: 900
+      trial_00125__2022-04-22_12-36-00:
+        height: 500
+        width: 900
+video_dir: /root/capsule/data/Marton_behavior_data/videos/

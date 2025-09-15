@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda120
+
+
+git clone https://github.com/danbider/lightning-pose.git
+cd lightning-pose
+pip install -e .
+
+pip install ipywidgets
+pip install protobuf==3.20.*
+pip uninstall -y fastapi starlette pydantic
+pip install fastapi starlette pydantic

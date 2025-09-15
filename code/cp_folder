@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+# scorer_name="Han_behavior_data"
+# project_folder_name="Foraging_Bot-Han_Lucas-2022-04-27"
+
+# #-------------------------------------------#
+# # train all test all model
+# # res_dir=~/capsule/scratch/LP_outputs/${scorer_name}/${project_folder_name}/CollectedData_all
+# # echo ${res_dir}
+# # ls -lt ${res_dir}
+# # tgt_dir=~/capsule/scratch/LP_CollectedData_all_model/
+# #-------------------------------------------#
+
+# # HH08_exclude_frames_include_leftoutmouse_1frameandvideo
+# res_dir=~/capsule/scratch/LP_outputs/${scorer_name}/${project_folder_name}/HH1*_exclude_frames_include_leftoutmouse_*frameandvideo
+# echo ${res_dir}
+# ls -lt ${res_dir}
+# tgt_dir=~/capsule/scratch/LP_leave_mouse_out_addNframe_model/
+
+# # -------------------------------------------#
+
+# # res_dir=~/capsule/scratch/LP_outputs/${scorer_name}/${project_folder_name}/CollectedData_all_1perc
+# # echo ${res_dir}
+# # ls -lt ${res_dir}
+# # tgt_dir=~/capsule/scratch/LP_Han_outputs_subset_trainAll/
+
+# #-------------------------------------------#
+
+# if [ ! -d ${tgt_dir} ]; then
+#     echo ${tgt_dir}
+#     mkdir ${tgt_dir}
+# fi
+
+# tgt_dir=${tgt_dir}/${scorer_name}
+# if [ ! -d ${tgt_dir} ]; then
+#     echo ${tgt_dir}
+#     mkdir ${tgt_dir}
+# fi
+
+# tgt_dir=${tgt_dir}/${project_folder_name}
+# if [ ! -d ${tgt_dir} ]; then
+#     echo ${tgt_dir}
+#     mkdir ${tgt_dir}
+# fi
+
+# cp -r ${res_dir} ${tgt_dir}
+
+# ls -lt $tgt_dir
+
+
+#########################################
+
+# cp -r /root/capsule/scratch/LP_outputs/Marton_behavior_data/'BCI_side&bottom_2022_no_pole'/* /root/capsule/scratch/LP_outputs_Marton_twoview_data/
+
+# cp -r /root/capsule/scratch/LP_outputs/Marton_behavior_data/'BCI_side&bottom_2022_no_pole'/* /root/capsule/scratch/LP_outputs_Marton_twoview_data/
+
+# /root/capsule/scratch/DLC_dataset_for_LP/Marton_behavior_data_modified
+data_dir="/root/capsule/scratch/LP_outputs/Marton_behavior_data_modified/"
+data_dir="/root/capsule/scratch/DLC_dataset_for_LP/Marton_behavior_data_modified/"
+
+for project in "BCI_side&bottom_bottom_only_2023_Sept" "BCI_side&bottom_side_only_2023_Sept" "BCI_side&bottom_2023_Sept";do
+    proj_dir=${data_dir}/${project}
+    echo $proj_dir
+    ls $proj_dir
+
+    video_dir=${proj_dir}/videos
+    echo $video_dir
+
+    for mouseID in "BCI26" "BCI29";do
+        tgt_dir=${video_dir}/${mouseID}
+        if [ ! -d ${tgt_dir} ]; then
+            echo ${tgt_dir}
+            mkdir ${tgt_dir}
+            cp ${video_dir}/${mouseID}*.mp4 ${tgt_dir}
+        fi
+        # cp -r ${proj_dir}/CollectedData_all_pca_singleview.config.yaml ${proj_dir}/${mouseID}_excluded_pca_singleview.config.yaml
+        # cp -r ${proj_dir}/CollectedData_all_supervised.config.yaml ${proj_dir}/${mouseID}_excluded_supervised.config.yaml
+
+        cp -r ${proj_dir}/${mouseID}_excluded_pca_singleview.config.yaml ${proj_dir}/${mouseID}_excluded_pca_single_multiview.config.yaml
+        cp -r ${proj_dir}/${mouseID}_excluded_pca_singleview.config.yaml ${proj_dir}/${mouseID}_excluded_supervised.config.yaml
+
+    done
+done
+
